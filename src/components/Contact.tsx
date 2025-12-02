@@ -47,13 +47,13 @@ export default function Contact() {
   ];
 
   return (
-    <div ref={ref} className="py-24 px-6 lg:px-8 bg-[#0F1115]">
+    <div ref={ref} className="section-padding px-6 lg:px-8 bg-[#0F1115]">
       <div className="max-w-7xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
           transition={{ duration: 0.6 }}
-          className="text-center mb-16"
+          className="text-center section-mb"
         >
           <h2 className="text-4xl lg:text-5xl font-bold mb-4">
             Get In <span className="text-[#2EA3FF]">Touch</span>

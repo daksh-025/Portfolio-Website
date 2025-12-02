@@ -44,7 +44,7 @@ export default function Hero() {
   };
 
   return (
-    <div className="relative min-h-screen flex items-center justify-center px-6 lg:px-8 pt-16">
+    <div className="relative min-h-[calc(100vh-4rem)] md:min-h-screen flex items-center justify-center px-6 lg:px-8 pt-16 pb-8 md:pb-0">
       <div className="max-w-7xl w-full mx-auto">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <motion.div
@@ -224,7 +224,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.8, duration: 0.6 }}
-          className="mt-16 pt-8 border-t border-[#1C1F24]"
+          className="mt-8 md:mt-16 pt-6 md:pt-8 border-t border-[#1C1F24]"
         >
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
             <div className="bg-[#1C1F24]/50 backdrop-blur-sm border border-[#2EA3FF]/20 rounded-lg p-6">

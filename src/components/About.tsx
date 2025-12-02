@@ -27,14 +27,14 @@ export default function About() {
   };
 
   return (
-    <div ref={ref} className="py-24 px-6 lg:px-8">
+    <div ref={ref} className="section-padding px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         <motion.div
           variants={containerVariants}
           initial="hidden"
           animate={isInView ? 'visible' : 'hidden'}
         >
-          <motion.div variants={itemVariants} className="text-center mb-16">
+          <motion.div variants={itemVariants} className="text-center section-mb">
             <h2 className="text-4xl lg:text-5xl font-bold mb-4">
               About <span className="text-[#2EA3FF]">Me</span>
             </h2>
@@ -43,7 +43,7 @@ export default function About() {
             </p>
           </motion.div>
 
-          <div className="grid lg:grid-cols-2 gap-12 mb-16">
+          <div className="grid lg:grid-cols-2 gap-8 md:gap-12 section-mb">
             <motion.div variants={itemVariants} className="space-y-6">
               <div className="bg-[#1C1F24]/50 backdrop-blur-sm border border-[#2EA3FF]/20 rounded-2xl p-8">
                 <h3 className="text-2xl font-bold mb-4 text-[#2EA3FF]">My Story</h3>
