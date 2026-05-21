@@ -7,4 +7,16 @@ export default defineConfig({
   optimizeDeps: {
     exclude: ['lucide-react'],
   },
+  build: {
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          'react-vendor': ['react', 'react-dom'],
+          'framer-motion': ['framer-motion'],
+          'supabase': ['@supabase/supabase-js'],
+          'icons': ['lucide-react', 'react-icons'],
+        },
+      },
+    },
+  },
 });
